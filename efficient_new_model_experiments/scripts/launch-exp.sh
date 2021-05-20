@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCRIPT_DIR="/RTS/cluster/work/beyazit/efficient_new_model_experiments/scripts"
+SCRIPT_DIR="${PWD}/../scripts"
 
 LAST=""
 CMD=""

@@ -1,3 +1,4 @@
+import os
 import sys
 import uppaal_verifier
 
@@ -51,11 +52,11 @@ def test_beyazit(input_file_name):
     xml_file_content[6] = "const int M = " + str(M) + ";\n"
     xml_file_content[7] = "const int MaxSegmentNumber = " + str(max_number_of_segments) + ";\n"
     xml_file_content[33] =  tasks + "\n"
-    xml_file_name = "/RTS/cluster/work/beyazit/efficient_new_model_experiments/scripts/temp_models/" + input_file_name.split("inputs/")[1].split(".csv")[0] + ".xml"
+    xml_file_name = os.getcwd() + "/../scripts/temp_models/" + input_file_name.split("inputs/")[1].split(".csv")[0] + ".xml"
     xml_file = open(xml_file_name, "w+")
     xml_file.writelines(xml_file_content)
     xml_file.close()
-    q_file_name = "/RTS/cluster/work/beyazit/efficient_new_model_experiments/scripts/temp_models/" + input_file_name.split("inputs/")[1].split(".csv")[0] + ".q"
+    q_file_name = os.getcwd() + "/../scripts/temp_models/" + input_file_name.split("inputs/")[1].split(".csv")[0] + ".q"
     q_file = open(q_file_name, "w+")
     q_file.write(q_file_content)
     q_file.close()
