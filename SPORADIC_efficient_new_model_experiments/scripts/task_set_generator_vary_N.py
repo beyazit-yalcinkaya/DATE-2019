@@ -76,7 +76,7 @@ def task_set_generator():
     U = 0.3
     M = 1
     period_values = [10, 20, 50, 100, 200, 500, 1000, 2000, 10000]
-    path = "/RTS/cluster/work/beyazit/SPORADIC_efficient_new_model_experiments/inputs/"
+    path = os.getcwd() + "/../inputs/"
     print M
     for N in [2, 4, 5, 7, 8, 10]:
         print N
@@ -121,7 +121,7 @@ def task_set_generator():
                         output_file.write("T, " + str(j + 1) + ", " + str(periods[j]) + ", " + str(periods[j]) + "\n")
                         output_file.write("V, " + str(j + 1) + ", 1, 0.0, 0.0, " + str(wcets[j]) + ", " + str(wcets[j]) + "\n")
                     output_file.close()
-                    schedulable = bool(int(os.popen("/RTS/cluster/work/bbb/exp/rtss18/tool/scripts/analyze-global-dag-task-set.sh -m " + str(M) + " --policy RM " + path + "vary_N_N=" + str(N) + "_M=" + str(M) + "_U=" + str(U) + "_task_set_" + str(i) + ".csv").read().split(", ")[1][1]))
+                    schedulable = True#bool(int(os.popen("/RTS/cluster/work/bbb/exp/rtss18/tool/scripts/analyze-global-dag-task-set.sh -m " + str(M) + " --policy RM " + path + "vary_N_N=" + str(N) + "_M=" + str(M) + "_U=" + str(U) + "_task_set_" + str(i) + ".csv").read().split(", ")[1][1]))
                     if schedulable:
                         break
                 output_file = open(path + "vary_N_N=" + str(N) + "_M=" + str(M) + "_U=" + str(U) + "_task_set_" + str(i) + ".csv" , "w+")

@@ -6,7 +6,7 @@ NUM_CPUS=`getconf _NPROCESSORS_ONLN`
 INPUT_DIR="${PWD}/../inputs" # Placeholder!
 OUTPUT_DIR="${PWD}/../outputs" # Placeholder!
 
-ANALYSIS_CMD="python2 ${PWD}/../scripts/test_beyazit.py"
+ANALYSIS_CMD="python ${PWD}/../scripts/test.py"
 
 mkdir -p ${PWD}/../scripts/temp_models
 

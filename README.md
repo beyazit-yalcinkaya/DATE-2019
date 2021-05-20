@@ -12,7 +12,7 @@ Experiments for periodic tasks are in the `efficient_new_model_experiments/` dir
 	cd efficient_new_model_experiments
 	unzip inputs.zip
 	cd scripts
-	./test_beyazit.sh
+	./test.sh
 
 After running these steps, the outputs of the experiments should be in the `outputs/` directory.
 
@@ -23,7 +23,7 @@ Experiments for sporadic tasks are in the `SPORADIC_efficient_new_model_experime
 	cd SPORADIC_efficient_new_model_experiments
 	unzip inputs.zip
 	cd scripts
-	./test_beyazit.sh
+	./test.sh
 	
 After running these steps, the outputs of the experiments should be in the `outputs/` directory.
 

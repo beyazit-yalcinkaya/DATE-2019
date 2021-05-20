@@ -13,7 +13,7 @@ def gcd(a, b):
 def lcm(a, b):
    return (a * b) // gcd(a,b)
 
-def test_beyazit(input_file_name):
+def test(input_file_name):
     global xml_file_content, q_file_content
     N = int(input_file_name.split("N=")[1].split("_")[0])
     M = int(input_file_name.split("M=")[1].split("_")[0])
@@ -63,6 +63,6 @@ def test_beyazit(input_file_name):
     uppaal_verifier.verify_xml_file(N, xml_file_name, q_file_name, min_period, max_period, str(number_of_jobs), input_file_name, "1h")
 if len(sys.argv) > 1:
     input_file_name = sys.argv[1]
-    test_beyazit(input_file_name)
+    test(input_file_name)
 else:
     print "Less argument than expected."
