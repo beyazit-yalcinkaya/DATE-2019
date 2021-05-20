@@ -8,6 +8,8 @@ OUTPUT_DIR="${PWD}/../outputs" # Placeholder!
 
 ANALYSIS_CMD="python2 ${PWD}/../scripts/test_beyazit.py"
 
+mkdir -p ${PWD}/../scripts/temp_models
+
 # Create output directory if it doesn't exist yet.
 mkdir -p $OUTPUT_DIR
 # Go there
