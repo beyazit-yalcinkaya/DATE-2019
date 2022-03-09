@@ -1,4 +1,4 @@
-#An Exact Schedulability Test for Non-Preemptive Self-Suspending Real-Time Tasks
+# An Exact Schedulability Test for Non-Preemptive Self-Suspending Real-Time Tasks
 
 This repository has the models and experiments of our DATE 2019 paper: [An Exact Schedulability Test for Non-Preemptive Self-Suspending Real-Time Tasks](https://people.mpi-sws.org/~bbb/papers/pdf/date19.pdf).
 
@@ -6,7 +6,7 @@ This repository has the models and experiments of our DATE 2019 paper: [An Exact
 
 UPPAAL models for periodic and sporadic tasks are in the `models/` directory.
 
-##Experiments for Periodic Tasks
+## Experiments for Periodic Tasks
 Experiments for periodic tasks are in the `efficient_new_model_experiments/` directory. To run the experiments follow the instructions below.
 
 	cd efficient_new_model_experiments
@@ -17,7 +17,7 @@ Experiments for periodic tasks are in the `efficient_new_model_experiments/` dir
 After running these steps, the outputs of the experiments should be in the `outputs/` directory.
 
 
-##Experiments for Sporadic Tasks
+## Experiments for Sporadic Tasks
 Experiments for sporadic tasks are in the `SPORADIC_efficient_new_model_experiments/` directory. To run the experiments follow the instructions below.
 
 	cd SPORADIC_efficient_new_model_experiments
@@ -29,7 +29,7 @@ After running these steps, the outputs of the experiments should be in the `outp
 
 
 
-##Output Format
+## Output Format
 Output fields of the `*.out` files are in the following order.
 
 	1. Input File Name
